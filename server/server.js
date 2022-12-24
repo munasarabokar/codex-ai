@@ -33,8 +33,8 @@ app.post('/', async (req, res) => {
       top_p: 1,
       best_of: 20,
       frequency_penalty: 2,
-      presence_penalty: 2 //er between -2.0 and 2.0. Positive values penalize new tokens based on whether they appear in the text so far, increasing the model's likelihood to talk about new topics.
-    });
+      presence_penalty: 2,
+     });
 
     res.status(200).send({
       bot: response.data.choices[0].text
